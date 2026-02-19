@@ -39,7 +39,7 @@ tests:
       - mathicsserver --help
     requirements:
       run:
-        - python >=${{ python_min }}
+        - python ${{ python_min }}.*
 
 about:
   homepage: https://mathics.org/
