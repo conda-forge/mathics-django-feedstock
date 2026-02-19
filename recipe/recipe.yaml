@@ -10,7 +10,7 @@ source:
     sha256: 458e64ed7fa1991d38c8d11323caf12f8eb004685b2b63b46e5d64ad47c4d8d2
 
 build:
-  number: 0
+  number: 1
   script: ${{ PYTHON }} -m pip install .
   python:
     entry_points:
@@ -39,7 +39,7 @@ tests:
       - mathicsserver --help
     requirements:
       run:
-        - python ${{ python_min }}
+        - python ${{ python_min }}.*
 
 about:
   homepage: https://mathics.org/
